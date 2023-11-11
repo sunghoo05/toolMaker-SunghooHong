@@ -1,23 +1,23 @@
 package org.example;
 
 public class ClassroomEngagement {
-    public static char ClassroomEngagementLetterGrade;
+    public static String ClassroomEngagementLetterGrade;
 
     public static void ClassroomEngagementLetterGradeCalculator(int Engagement) {
         if (Engagement >= 24) {
-            ClassroomEngagementLetterGrade = 'A';
+            ClassroomEngagementLetterGrade = "A";
             System.out.println("Your Classroom Engagement Letter Grade is: " + ClassroomEngagementLetterGrade);
         } else if (Engagement >= 22 && Engagement < 24) {
-            ClassroomEngagementLetterGrade = 'B';
+            ClassroomEngagementLetterGrade = "B";
             System.out.println("Your Classroom Engagement Letter Grade is: " + ClassroomEngagementLetterGrade);
         } else if (Engagement >= 20 && Engagement < 22) {
-            ClassroomEngagementLetterGrade = 'C';
+            ClassroomEngagementLetterGrade = "C";
             System.out.println("Your Classroom Engagement Letter Grade is: " + ClassroomEngagementLetterGrade);
         } else if (Engagement >= 18 && Engagement < 20) {
-            ClassroomEngagementLetterGrade = 'D';
+            ClassroomEngagementLetterGrade = "D";
             System.out.println("Your Classroom Engagement Letter Grade is: " + ClassroomEngagementLetterGrade);
         } else {
-            ClassroomEngagementLetterGrade = 'F';
+            ClassroomEngagementLetterGrade = "F";
             System.out.println("Your Classroom Engagement Letter Grade is: " + ClassroomEngagementLetterGrade);
         }
     }

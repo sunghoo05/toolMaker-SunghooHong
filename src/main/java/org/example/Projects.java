@@ -1,7 +1,7 @@
 package org.example;
 
 public class Projects {
-    public static char projectsLetterGrade;
+    public static String projectsLetterGrade;
 
     public static void projectsLetterGradeCalculator(String iteration1OfFirstProject, String iteration2OfFirstProject, String iteration1OfFinalProject, String iteration2OfFinalProject, String iteration3OfFinalProject) {
         // Convert Letter Grades into number grades to calculate better
@@ -60,19 +60,19 @@ public class Projects {
 
         // Converting number grades back into the total letter grade
         if (iteration3OfFinalProject.equals("A") && totalNumberGrade >= 10) {
-            projectsLetterGrade = 'A';
+            projectsLetterGrade = "A";
             System.out.println("Your Projects Letter Grade is: " + projectsLetterGrade);
         } else if (iteration3OfFinalProject.equals("B") && totalNumberGrade >= 5) {
-            projectsLetterGrade = 'B';
+            projectsLetterGrade = "B";
             System.out.println("Your Projects Letter Grade is: " + projectsLetterGrade);
         } else if (iteration3OfFinalProject.equals("C") && totalNumberGrade >= 5) {
-            projectsLetterGrade = 'C';
+            projectsLetterGrade = "C";
             System.out.println("Your Projects Letter Grade is: " + projectsLetterGrade);
         } else if (iteration3OfFinalProject.equals('D') && totalNumberGrade >= 5) {
-            projectsLetterGrade = 'D';
+            projectsLetterGrade = "D";
             System.out.println("Your Projects Letter Grade is: " + projectsLetterGrade);
         } else {
-            projectsLetterGrade = 'F';
+            projectsLetterGrade = "F";
             System.out.println("Your Projects Letter Grade is: " + projectsLetterGrade);
         }
     }

@@ -1,24 +1,24 @@
 package org.example;
 
 public class Assignment {
-    public static char AssignmentsLetterGrade;
+    public static String AssignmentsLetterGrade;
 
     public static void AssignmentsLetterGradeCalculator(int Assignments)
     {
         if (Assignments == 7) {
-            AssignmentsLetterGrade = 'A';
+            AssignmentsLetterGrade = "A";
             System.out.println("Your Assignment Letter Grade is: " + AssignmentsLetterGrade);
         } else if (Assignments == 6) {
-            AssignmentsLetterGrade = 'B';
+            AssignmentsLetterGrade = "B";
             System.out.println("Your Assignment Letter Grade is: " + AssignmentsLetterGrade);
         } else if (Assignments == 5) {
-            AssignmentsLetterGrade = 'C';
+            AssignmentsLetterGrade = "C";
             System.out.println("Your Assignment Letter Grade is: " + AssignmentsLetterGrade);
         } else if (Assignments == 4) {
-            AssignmentsLetterGrade = 'D';
+            AssignmentsLetterGrade = "D";
             System.out.println("Your Assignment Letter Grade is: " + AssignmentsLetterGrade);
         } else {
-            AssignmentsLetterGrade = 'F';
+            AssignmentsLetterGrade = "F";
             System.out.println("Your Assignment Letter Grade is: " + AssignmentsLetterGrade);
         }
     }

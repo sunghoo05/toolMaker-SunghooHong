@@ -1,6 +1,12 @@
 package org.example;
 
+import static org.example.Achievements.AchievementsLetterGrade;
+import static org.example.Assignment.AssignmentsLetterGrade;
+import static org.example.ClassroomEngagement.ClassroomEngagementLetterGrade;
+import static org.example.FinalExam.finalExamLetterGrade;
 import static org.example.GradeDataGetter.*;
+import static org.example.MidSemesterSelfAssessmentReport.MidSemesterSelfAssessmentLetterGrade;
+import static org.example.Projects.projectsLetterGrade;
 
 public class DisplayCourseGrade {
     public static void main(String[] args) {
@@ -25,11 +31,15 @@ public class DisplayCourseGrade {
         midSemesterSelfAssessmentLetterGrade.MidSemesterSelfAssessmentLetterGradeCalculator(MidTermSelfAssessment);
 
         // Display Projects Letter Grade by running Projects Class
-        Projects projectsLetterGrade = new Projects();
-        projectsLetterGrade.projectsLetterGradeCalculator(iteration1OfFirstProject, iteration2OfFirstProject, iteration1OfFinalProject, iteration2OfFinalProject, iteration3OfFinalProject);
+        Projects ProjectsLetterGrade = new Projects();
+        ProjectsLetterGrade.projectsLetterGradeCalculator(iteration1OfFirstProject, iteration2OfFirstProject, iteration1OfFinalProject, iteration2OfFinalProject, iteration3OfFinalProject);
 
         // Display Final Exam Letter Grade by running FinalExam Class
-        FinalExam finalExamLetterGrade = new FinalExam();
-        finalExamLetterGrade.finalExamLetterGradeCalculator(FinalExam);
+        FinalExam FinalExamLetterGrade = new FinalExam();
+        FinalExamLetterGrade.finalExamLetterGradeCalculator(FinalExam);
+
+        // Display the Final Course Letter Grade by running CourseGradeCalculator Class
+        CourseGradeCalculator courseGrade = new CourseGradeCalculator();
+        courseGrade.CourseLetterGradeCalculator(ClassroomEngagementLetterGrade, AssignmentsLetterGrade, AchievementsLetterGrade, MidSemesterSelfAssessmentLetterGrade, projectsLetterGrade, finalExamLetterGrade);
     }
 }
